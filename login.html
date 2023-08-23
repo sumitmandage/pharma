@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Medicine</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Medicine</h2>
+        <form action="process_medicine.php" method="post">
+            <label for="medicineName">Medicine Name:</label>
+            <input type="text" id="medicineName" name="medicineName" required>
+
+            <label for="medicineID">Medicine ID:</label>
+            <input type="text" id="medicineID" name="medicineID" required>
+
+            <label for="medicinePrice">Medicine Price:</label>
+            <input type="number" id="medicinePrice" name="medicinePrice" required>
+
+            <label for="medicineQuantity">Medicine Quantity:</label>
+            <input type="number" id="medicineQuantity" name="medicineQuantity" required>
+
+            <button type="submit">Add Medicine</button>
+        </form>
+    </div>
+</body>
+</html>
